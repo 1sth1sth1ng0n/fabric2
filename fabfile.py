@@ -9,7 +9,7 @@ from fabric import task, Connection
 @task
 def checkTomcat(ctx):
 
-    """ acquisition and release, no need to c.close """
+    """ acquisition and release - no need to c.close """
     with Connection(
         ctx.host,
         connect_timeout=4,
